@@ -10,13 +10,13 @@ using Microsoft.EntityFrameworkCore;
 namespace API.Controllers
 {
     [ApiController]
-    [Route("api/controller")]
-    public class ProductController : ControllerBase
+    [Route("api/[controller]")]
+    public class ProductsController : ControllerBase
     {
 
         private readonly StoreContext _context;
 
-        public ProductController(StoreContext context)
+        public ProductsController(StoreContext context)
         {
             _context = context;
 
